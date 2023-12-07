@@ -1,0 +1,108 @@
+:root{
+    /*Paleta de colores*/
+    --blanco: #FFFFFF;
+    --oscuro: #212121;
+    --primario: #FFC107;
+    --secundario: #0097A7;
+    --gris: #757575;
+
+    --fuente-principal: 3.8rem;
+}
+
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    background: url('excepciones.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.titulo{
+    text-align: center;
+    font-size: 4.5rem;
+    font-weight: normal;
+    color: #252525;
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.titulo span{
+    font-size: 2rem;
+}
+
+p{
+    text-align: center;
+    font-weight: normal;
+}
+
+a{
+    color: var(--secundario);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.nav-bg{
+    background-color: var(--secundario);
+}
+
+.navegacion-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+@media (min-width: 768px) {
+    .navegacion-principal{
+        flex-direction: row;
+    }
+}
+
+
+.navegacion-principal a{
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.navegacion-principal a:hover{
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+@media (min-width: 480px) {
+
+}
+
+
+.icono-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Ajusta según sea necesario */
+}
+
+.icon {
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+}
+
+.titulo {
+    margin: 0;
+}

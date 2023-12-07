@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Empleado</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body class="pagina-empleado">
+    <h1>Formulario de Empleado</h1>
+
+    <form action="Empleado.php" method="post">
+        <label for="Id_emp">ID Empleado:</label>
+        <input type="text" name="Id_emp" id="Id_emp"><br>
+
+        <label for="nombre_Emp">Nombre:</label>
+        <input type="text" name="nombre_Emp" id="nombre_Emp"><br>
+
+        <label for="ap_P_Emp">Apellido Paterno:</label>
+        <input type="text" name="ap_P_Emp" id="ap_P_Emp"><br>
+
+        <label for="ap_M_Emp">Apellido Materno:</label>
+        <input type="text" name="ap_M_Emp" id="ap_M_Emp"><br>
+
+        <label for="puesto">Puesto:</label>
+        <input type="text" name="puesto" id="puesto"><br>
+
+        <label for="Horario">Horario:</label>
+        <input type="text" name="Horario" id="Horario"><br>
+
+        <label for="fecha_nac">Fecha de Nacimiento:</label>
+        <input type="date" name="fecha_nac" id="fecha_nac"><br>
+
+        <label for="salario_mensual">Salario Mensual:</label>
+        <input type="text" name="salario_mensual" id="salario_mensual"><br>
+
+        <button type="submit" name="accion" value="alta">Alta</button>
+        <button type="submit" name="accion" value="modificar">Modificar</button>
+        <button type="submit" name="accion" value="baja">Baja</button>
+        <button type="submit" name="accion" value="Regresar"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="44" height="44" viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M5 12l-2 0l9 -9l9 9l-2 0" />
+            <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+            <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+          </svg></button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,615 @@
+body {
+    background: url('Farmacia.jpg') no-repeat;
+    font-size: 16px;
+    background-position: center;   /* background-size: cover; /* Ajusta la imagen de fondo al tamaño de la ventana */
+    background-size: cover; 
+    font-family: 'Nunito', sans-serif;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 3.8rem;
+    font-weight: normal;
+}
+.titulo span{
+    font-size: 2rem;
+}
+
+header {
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+main {
+    text-align: center;
+    /*background-color: rgba(255, 255, 255, 0.8);*/
+    
+    padding: 20px;
+}
+h2 {
+    margin-bottom: 20px;
+    color: #252525;
+}
+p {
+    margin-bottom: 20px;
+    color: #252525;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+ul li {
+    display: block; /* Muestra los elementos como bloques para que se muestren en línea en pantallas pequeñas */
+    margin: 10px 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: #070400dc; /* Cambia el color de fondo de los botones del menú */
+    border: 1px solid #ffaa0007; /* Agrega un borde a los botones del menú */
+    border-radius: 5px;
+    display: inline-block;
+    width: 30%; /* Asegura que los botones ocupen todo el ancho disponible en pantallas pequeñas */
+    color: #fff; /* Cambia el color del texto */
+}
+
+ul li a:hover {
+    background-color: #0056b3; /* Cambia el color de fondo cuando se pasa el mouse sobre los botones del menú */
+    color: #fff; /* Cambia el color del texto cuando se pasa el mouse sobre los botones del menú */
+}
+
+p{
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 8px;
+}
+/* Media Query para pantallas pequeñas (como celulares) */
+@media (max-width: 767px) {
+    ul li {
+        margin: 5px 0; /* Reduzca el margen para un mejor espacio entre botones en pantallas pequeñas */
+    }
+}
+
+
+/* Estilos específicos para la página de clientes */
+body.pagina-clientes {
+    text-align: center;
+    color: #333;
+    padding: 20px;
+}
+
+body.pagina-clientes h1 {
+    font-size: 24px;
+    background-color: #070400dc;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+body.pagina-clientes form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+body.pagina-clientes label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+body.pagina-clientes input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+body.pagina-clientes button {
+    width: 100%;
+    padding: 10px;
+    background-color: #070400dc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+body.pagina-clientes button:hover{
+    background-color: #0056b3; /* Cambia el color de fondo cuando se pasa el mouse sobre los botones del menú */
+    color: #fff; /* Cambia el color del texto cuando se pasa el mouse sobre los botones del menú */
+}
+
+/* Media Query para pantallas pequeñas (como celulares) */
+@media (max-width: 767px) {
+    ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    ul li a {
+        width: 100%;
+    }
+
+    body.pagina-clientes form {
+        max-width: 100%;
+    }
+}
+
+/* Estilos específicos para la página de empleado */
+body.pagina-empleado {
+    text-align: center;
+    color: #333;
+    padding: 20px;
+}
+
+body.pagina-empleado h1 {
+    font-size: 24px;
+    background-color: #070400dc;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+body.pagina-empleado form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+body.pagina-empleado label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+body.pagina-empleado input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+body.pagina-empleado button {
+    width: 100%;
+    padding: 10px;
+    background-color: #070400dc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+body.pagina-empleado button:hover{
+    background-color: #0056b3; /* Cambia el color de fondo cuando se pasa el mouse sobre los botones del menú */
+    color: #fff; /* Cambia el color del texto cuando se pasa el mouse sobre los botones del menú */
+}
+
+/* Media Query para pantallas pequeñas (como celulares) */
+@media (max-width: 767px) {
+    ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    ul li a {
+        width: 100%;
+    }
+
+    body.pagina-empleado form {
+        max-width: 100%;
+    }
+}
+
+/* Estilos específicos para la página de venta */
+body.pagina-venta {
+    text-align: center;
+    color: #333;
+    padding: 20px;
+}
+
+body.pagina-venta h1 {
+    font-size: 24px;
+    background-color: #070400dc;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+body.pagina-venta form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+body.pagina-venta label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+body.pagina-venta input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+body.pagina-venta button {
+    width: 100%;
+    padding: 10px;
+    background-color: #070400dc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+body.pagina-venta button:hover{
+    background-color: #0056b3; /* Cambia el color de fondo cuando se pasa el mouse sobre los botones del menú */
+    color: #fff; /* Cambia el color del texto cuando se pasa el mouse sobre los botones del menú */
+}
+
+/* Media Query para pantallas pequeñas (como celulares) */
+@media (max-width: 767px) {
+    ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    ul li a {
+        width: 100%;
+    }
+
+    body.pagina-venta form {
+        max-width: 100%;
+    }
+}
+
+/* Estilos específicos para la página de productoG */
+body.pagina-productoG {
+    text-align: center;
+    color: #333;
+    padding: 20px;
+}
+
+body.pagina-productoG h1 {
+    font-size: 24px;
+    background-color: #070400dc;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+body.pagina-productoG form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+body.pagina-productoG label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+body.pagina-productoG input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+body.pagina-productoG button {
+    width: 100%;
+    padding: 10px;
+    background-color: #070400dc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+body.pagina-productoG button:hover{
+    background-color: #0056b3; /* Cambia el color de fondo cuando se pasa el mouse sobre los botones del menú */
+    color: #fff; /* Cambia el color del texto cuando se pasa el mouse sobre los botones del menú */
+}
+
+/* Media Query para pantallas pequeñas (como celulares) */
+@media (max-width: 767px) {
+    ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    ul li a {
+        width: 100%;
+    }
+
+    body.pagina-productoG form {
+        max-width: 100%;
+    }
+}
+
+/* Estilos específicos para la página de medicamento */
+body.pagina-medicamento {
+    text-align: center;
+    color: #333;
+    padding: 20px;
+}
+
+body.pagina-medicamento h1 {
+    font-size: 24px;
+    background-color: #070400dc;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+body.pagina-medicamento form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+body.pagina-medicamento label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+body.pagina-medicamento input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+body.pagina-medicamento button {
+    width: 100%;
+    padding: 10px;
+    background-color: #070400dc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+body.pagina-medicamento button:hover{
+    background-color: #0056b3; /* Cambia el color de fondo cuando se pasa el mouse sobre los botones del menú */
+    color: #fff; /* Cambia el color del texto cuando se pasa el mouse sobre los botones del menú */
+}
+/* Media Query para pantallas pequeñas (como celulares) */
+@media (max-width: 767px) {
+    ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    ul li a {
+        width: 100%;
+    }
+
+    body.pagina-medicamento form {
+        max-width: 100%;
+    }
+}
+
+/* Estilos específicos para la página de compuesto */
+body.pagina-compuesto {
+    text-align: center;
+    color: #333;
+    padding: 20px;
+}
+
+body.pagina-compuesto h1 {
+    font-size: 24px;
+    background-color: #070400dc;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+body.pagina-compuesto form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+body.pagina-compuesto label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+body.pagina-compuesto input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+body.pagina-compuesto button {
+    width: 100%;
+    padding: 10px;
+    background-color: #070400dc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+body.pagina-compuesto button:hover{
+    background-color: #0056b3; /* Cambia el color de fondo cuando se pasa el mouse sobre los botones del menú */
+    color: #fff; /* Cambia el color del texto cuando se pasa el mouse sobre los botones del menú */
+}
+
+/* Media Query para pantallas pequeñas (como celulares) */
+@media (max-width: 767px) {
+    ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    ul li a {
+        width: 100%;
+    }
+
+    body.pagina-compuesto form {
+        max-width: 100%;
+    }
+}
+
+/* Estilos específicos para la página de pedido */
+body.pagina-pedido {
+    text-align: center;
+    color: #333;
+    padding: 20px;
+}
+
+body.pagina-pedido h1 {
+    font-size: 24px;
+    background-color: #070400dc;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+body.pagina-pedido form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+body.pagina-pedido label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+body.pagina-pedido input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+body.pagina-pedido button {
+    width: 100%;
+    padding: 10px;
+    background-color: #070400dc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+body.pagina-pedido button:hover{
+    background-color: #0056b3; /* Cambia el color de fondo cuando se pasa el mouse sobre los botones del menú */
+    color: #fff; /* Cambia el color del texto cuando se pasa el mouse sobre los botones del menú */
+}
+/* Media Query para pantallas pequeñas (como celulares) */
+@media (max-width: 767px) {
+    ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    ul li a {
+        width: 100%;
+    }
+
+    body.pagina-pedido form {
+        max-width: 100%;
+    }
+}
+
+/* Estilos específicos para la página de proveedor */
+body.pagina-proveedor {
+    text-align: center;
+    color: #333;
+    padding: 20px;
+}
+
+body.pagina-proveedor h1 {
+    font-size: 24px;
+    background-color: #070400dc;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+body.pagina-proveedor form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+body.pagina-proveedor label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+body.pagina-proveedor input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+body.pagina-proveedor button {
+    width: 100%;
+    padding: 10px;
+    background-color: #070400dc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+body.pagina-proveedor button:hover{
+    background-color: #0056b3; /* Cambia el color de fondo cuando se pasa el mouse sobre los botones del menú */
+    color: #fff; /* Cambia el color del texto cuando se pasa el mouse sobre los botones del menú */
+}
+/* Media Query para pantallas pequeñas (como celulares) */
+@media (max-width: 767px) {
+    ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    ul li a {
+        width: 100%;
+    }
+
+    body.pagina-proveedor form {
+        max-width: 100%;
+    }
+}

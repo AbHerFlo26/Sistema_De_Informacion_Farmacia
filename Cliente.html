@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Clientes</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css"> <!-- Agrega tu archivo CSS aquí -->
+</head>
+<body class="pagina-clientes">
+    <h1>Formulario de Clientes</h1>
+
+    <form action="Cliente.php" method="post">
+        <label for="id_cliente">ID Cliente:</label>
+        <input type="text" name="id_cliente" id="id_cliente"><br>
+
+        <label for="nombre_cliente">Nombre:</label>
+        <input type="text" name="nombre_cliente" id="nombre_cliente"><br>
+
+        <label for="ap_P_C">Apellido Paterno:</label>
+        <input type="text" name="ap_P_C" id="ap_P_C"><br>
+
+        <label for="ap_M_C">Apellido Materno:</label>
+        <input type="text" name="ap_M_C" id="ap_M_C"><br>
+
+        <label for="NUM_TELEFONO">Numero de Telefono:</label>
+        <input type="number" name="NUM_TELEFONO" id="NUM_TELEFONO"><br>
+
+        <button type="submit" name="accion" value="alta">Alta</button>
+        <button type="submit" name="accion" value="modificar">Modificar</button>
+        <button type="submit" name="accion" value="baja">Baja</button>
+        <button type="submit" name="accion" value="Regresar"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="44" height="44" viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M5 12l-2 0l9 -9l9 9l-2 0" />
+            <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+            <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+          </svg></button>
+    </form>
+</body>
+</html>

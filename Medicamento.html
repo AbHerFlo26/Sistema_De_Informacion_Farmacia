@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Medicamento</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body class="pagina-medicamento">
+    <h1>Formulario de Medicamento</h1>
+
+    <form action="Medicamento.php" method="post">
+        <label for="ID_PRODUCTO">ID Producto:</label>
+        <input type="number" name="ID_PRODUCTO" id="ID_PRODUCTO"><br>
+
+        <label for="NOMBRE">Nombre:</label>
+        <input type="text" name="NOMBRE" id="NOMBRE"><br>
+
+        <label for="DESCRIPCION">Descripcion:</label>
+        <input type="text" name="DESCRIPCION" id="DESCRIPCION"><br>
+
+        <label for="GENERICO_PATENTE">Generico(1)/Patente(0):</label>
+        <input type="text" name="GENERICO_PATENTE" id="GENERICO_PATENTE"><br>
+
+        <label for="Precio_m">Precio:</label>
+        <input type="number" step="0.01" name="Precio_m" id="Precio_m"><br>
+
+        <label for="FECHA_CADUCIDAD">Fecha de Caducidad:</label>
+        <input type="date" name="FECHA_CADUCIDAD" id="FECHA_CADUCIDAD"><br>
+
+        <label for="STOCK_MAX">Stock Maximo:</label>
+        <input type="number" name="STOCK_MAX" id="STOCK_MAX"><br>
+
+        <label for="STOCK_MIN">Stock Minimo:</label>
+        <input type="number" name="STOCK_MIN" id="STOCK_MIN"><br>
+
+        <label for="CANTIDAD_EXISTENCIA">Cantidad en Existencia:</label>
+        <input type="number" name="CANTIDAD_EXISTENCIA" id="CANTIDAD_EXISTENCIA"><br>
+
+        <label for="ID_COMPUESTO">ID Compuesto:</label>
+        <input type="number" name="ID_COMPUESTO" id="ID_COMPUESTO"><br>
+
+        <button type="submit" name="accion" value="alta">Alta</button>
+        <button type="submit" name="accion" value="modificar">Modificar</button>
+        <button type="submit" name="accion" value="baja">Baja</button>
+        <button type="submit" name="accion" value="Regresar"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="44" height="44" viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M5 12l-2 0l9 -9l9 9l-2 0" />
+            <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+            <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+          </svg></button>
+
+    </form>
+</body>
+</html>
