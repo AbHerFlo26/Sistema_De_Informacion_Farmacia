@@ -1,0 +1,102 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after { /*el * selecciona todos los elementos del html*/
+    box-sizing: inherit;
+}
+
+body {
+    background: url('../img/Farmacia.jpg') no-repeat;
+    background-position: center center;   /* background-size: cover; /* Ajusta la imagen de fondo al tamaño de la ventana */
+    background-size: cover; 
+    background-attachment: fixed; 
+    font-family: 'Nunito', sans-serif;
+}
+
+
+h2{
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #252525;
+    text-align: center;
+}
+
+
+.titulo{
+    text-align: center;
+    font-size: 3.8rem;
+    font-weight: normal;
+}
+
+.titulo span{
+    font-size: 2.5rem;
+}
+
+header {
+    font-family: 'Nunito', sans-serif;
+    text-align: left;
+    font-weight: bold; /*negritas*/
+    font-size: 1.8rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #252525;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+ul li {
+    display: block; /* Muestra los elementos como bloques para que se muestren en línea en pantallas pequeñas */
+    margin: 10px 0;
+}
+
+ul li a {
+    background-color: #070400dc; /* Cambia el color de fondo de los botones del menú */
+    color: #fff; /* Cambia el color del texto */
+    padding: 2rem 2rem;
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    text-decoration: none;
+    border: 1px solid #ffaa0007; /* Agrega un borde a los botones del menú */
+    border-radius: 2rem;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    width: 40%; /* Asegura que los botones ocupen todo el ancho disponible en pantallas pequeñas */
+    text-align: center;
+    font-weight: normal;
+}
+
+ul li a:hover {
+    background-color: #0056b3; /* Cambia el color de fondo cuando se pasa el mouse sobre los botones del menú */
+    color: #fff; /* Cambia el color del texto cuando se pasa el mouse sobre los botones del menú */
+}
+
+p{
+    text-align: center;
+    padding: 8px;
+}
+
+/* Media Query para pantallas pequeñas (como celulares) */
+@media (max-width: 768px) {
+    ul li a{
+        width: 80%;
+    }
+}
+
+
+

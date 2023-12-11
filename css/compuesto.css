@@ -1,0 +1,108 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after { /*el * selecciona todos los elementos del html*/
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+    background: url('../img/Farmacia.jpg') no-repeat;
+    background-position: center center;  
+    background-size: cover;
+    background-attachment: fixed; 
+    font-family: 'Nunito', sans-serif;
+}
+
+
+h2{
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #252525;
+    text-align: center;
+}
+
+
+.titulo{
+    text-align: center;
+    font-size: 3.8rem;
+    font-weight: normal;
+}
+
+header {
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Estilos específicos para la página de compuesto */
+body.pagina-compuesto {
+    text-align: center;
+    padding: 2%;
+}
+
+body.pagina-compuesto h1 {
+    font-size: 3.8rem;
+    color: #fff;
+    padding: 1%;
+    border-radius: 0.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+body.pagina-compuesto form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+body.pagina-compuesto label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 2rem;
+}
+
+body.pagina-compuesto input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+body.pagina-compuesto button {
+    width: 100%;
+    padding: 1rem 2rem;
+    margin-top: 0.5rem; /*Separacion entre botones*/
+    background-color: #070400dc;
+    font-size: 1.8rem;
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+body.pagina-compuesto button:hover{
+    background-color: #0056b3; /* Cambia el color de fondo cuando se pasa el mouse sobre los botones del menú */
+    color: #fff; /* Cambia el color del texto cuando se pasa el mouse sobre los botones del menú */
+}
+
+/* Media Query para pantallas pequeñas (como celulares) */
+@media (max-width: 768px) {
+    body.pagina-compuesto form {
+        max-width: 100%;
+    }
+}
+

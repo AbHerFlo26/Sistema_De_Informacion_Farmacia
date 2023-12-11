@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> <!-- Permite acentos o la letra ñ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <title>Formulario de Pedidos</title>
+    <link rel="preload" href="../css/normalize.css" as="style"> <!-- Carga mas rapido los estilos -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../css/pedido.css"> <!-- Agrega tu archivo CSS aquí -->
+</head>
+<body class="pagina-pedido">
+    <header>
+        <h1 class ="titulo">Formulario de Pedidos <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-truck-delivery" width="72" height="72" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+            <path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+            <path d="M5 17h-2v-4m-1 -8h11v12m-4 0h6m4 0h2v-6h-8m0 -5h5l3 5" />
+            <path d="M3 9l4 0" />
+          </svg></h1>   
+    </header>
+
+        <h2>Rellene los siguientes campos para Pedidos:</h2>
+    <form action="../php/Pedido.php" method="post">
+        <label for="id_pedido">ID Pedido:</label>
+        <input type="number" name="id_pedido" id="id_pedido"><br>
+
+        <label for="id_producto">ID Producto del Pedido:</label>
+        <input type="number" name="id_producto" id="id_producto"><br>
+
+        <label for="id_proveedor">ID Proveedor del Pedido:</label>
+        <input type="number" name="id_proveedor" id="id_proveedor"><br>
+
+        <label for="Id_emp">ID Empleado del Pedido:</label>
+        <input type="number" name="Id_emp" id="Id_emp"><br>
+
+        <label for="cantidad_productos">Cantidad de Productos:</label>
+        <input type="number" name="cantidad_productos" id="cantidad_productos"><br>
+
+        <label for="fecha">Fecha:</label>
+        <input type="date" name="fecha" id="fecha"><br>
+
+        <label for="precio_unitario_compra">Precio Unitario de Compra:</label>
+        <input type="number" step="0.01" name="precio_unitario_compra" id="precio_unitario_compra"><br>
+
+        <label for="precio_unitario_venta">Precio Unitario de Venta:</label>
+        <input type="number" step="0.01" name="precio_unitario_venta" id="precio_unitario_venta"><br>
+
+        <label for="Costo_total">Costo Total:</label>
+        <input type="number" step="0.01" name="Costo_total" id="Costo_total"><br>
+
+        <button type="submit" name="accion" value="alta">Alta</button>
+        <button type="submit" name="accion" value="modificar">Modificar</button>
+        <button type="submit" name="accion" value="baja">Baja</button>
+        <button type="submit" name="accion" value="Regresar"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="44" height="44" viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M5 12l-2 0l9 -9l9 9l-2 0" />
+            <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+            <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+          </svg></button>
+
+    </form>
+</body>
+</html>

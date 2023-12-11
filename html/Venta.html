@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> <!-- Permite acentos o la letra ñ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <title>Formulario de Venta</title>
+    <link rel="preload" href="../css/normalize.css" as="style"> <!-- Carga mas rapido los estilos -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../css/venta.css">
+</head>
+<body class="pagina-venta">
+    <header>
+        <h1 class ="titulo">Formulario de Ventas <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-report-money" width="72" height="72" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" />
+            <path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" />
+            <path d="M14 11h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5" />
+            <path d="M12 17v1m0 -8v1" />
+          </svg></h1>   
+    </header>
+
+    <h2>Rellene los siguientes campos para Ventas:</h2>
+    <form action="../php/Venta.php" method="post">
+        <label for="id_venta">ID Venta:</label>
+        <input type="number" name="id_venta" id="id_venta"><br>
+
+        <label for="Id_empleado">ID Empleado:</label>
+        <input type="number" name="Id_empleado" id="Id_empleado"><br>
+
+        <label for="id_cliente">ID Cliente:</label>
+        <input type="number" name="id_cliente" id="id_cliente"><br>
+
+        <label for="id_producto">ID Producto:</label>
+        <input type="number" name="id_producto" id="id_producto"><br>
+
+        <label for="fecha">Fecha:</label>
+        <input type="date" name="fecha" id="fecha"><br>
+
+        <label for="total">Total:</label>
+        <input type="number" name="total" id="total"><br>
+
+        <button type="submit" name="accion" value="alta">Alta</button>
+        <button type="submit" name="accion" value="modificar">Modificar</button>
+        <button type="submit" name="accion" value="baja">Baja</button>
+        <button type="submit" name="accion" value="Regresar"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="44" height="44" viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M5 12l-2 0l9 -9l9 9l-2 0" />
+            <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+            <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+          </svg></button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> <!-- Permite acentos o la letra ñ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <title>Formulario de Proveedor</title>
+    <link rel="preload" href="../css/normalize.css" as="style"> <!-- Carga mas rapido los estilos -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../css/proveedor.css"> <!-- Agrega tu archivo CSS aquí -->
+</head>
+
+<body class="pagina-proveedor">
+    <header>
+        <h1 class ="titulo">Formulario de Proveedores <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-dollar" width="72" height="72" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+            <path d="M6 21v-2a4 4 0 0 1 4 -4h3" />
+            <path d="M21 15h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5" />
+            <path d="M19 21v1m0 -8v1" />
+          </svg></h1>   
+    </header>
+
+        <h2>Rellene los siguientes campos para Proveedores:</h2>
+    <form action="../php/Proveedor.php" method="post">
+        <label for="id_proveedor">ID Proveedor:</label>
+        <input type="number" name="id_proveedor" id="id_proveedor"><br>
+
+        <label for="Nombre_P">Nombre:</label>
+        <input type="text" name="Nombre_P" id="Nombre_P"><br>
+
+        <label for="ap_P_p">Apellido Paterno:</label>
+        <input type="text" name="ap_P_p" id="ap_P_p"><br>
+
+        <label for="ap_M_p">Apellido Materno:</label>
+        <input type="text" name="ap_M_p" id="ap_M_p"><br>
+
+        <label for="Empresa">Empresa:</label>
+        <input type="text" name="Empresa" id="Empresa"><br>
+
+        <label for="num_telefono">Numero de Telefono:</label>
+        <input type="number" name="num_telefono" id="num_telefono"><br>
+
+        <label for="horario">Horario:</label>
+        <input type="text" name="horario" id="horario"><br>
+
+        <button type="submit" name="accion" value="alta">Alta</button>
+        <button type="submit" name="accion" value="modificar">Modificar</button>
+        <button type="submit" name="accion" value="baja">Baja</button>
+        <button type="submit" name="accion" value="Regresar"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="44" height="44" viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M5 12l-2 0l9 -9l9 9l-2 0" />
+            <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+            <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+          </svg></button>
+
+    </form>
+</body>
+</html>
+
